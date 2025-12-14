@@ -28,10 +28,19 @@ class LinkedList:
         print("None")
 
         
-        
+    def remove_node(self,data):
+        temp=self.head
 
+        while temp is not None:
         
+            if temp.next.data == data:
+                temp.next=temp.next.next
+                temp.next.next=temp
+                return
+            
 
+            temp=temp.next
+        return -1
 
 
 # Given list
