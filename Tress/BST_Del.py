@@ -51,6 +51,14 @@ def find_min(node):
         node = node.left
     return node
 
+
+
+def inorder(root):
+    if not root:
+        return
+    inorder(root.left)
+    print(root.data,end=' ')
+    inorder(root.right)
             
 
 
@@ -61,7 +69,11 @@ root = None
 for val in arr:
     root = insert_bst(root, val)
 
-result=delete_bst(root,10)
+result=delete_bst(root,1)
+
+inorder(result)
+
+
 
 
 
