@@ -10,7 +10,7 @@ def insert_bst(root,data):
     if root is None:
         return Node(data)
     
-
+    
     if root.data > data:
         root.left=insert_bst(root.left,data)
     else:

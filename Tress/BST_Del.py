@@ -69,10 +69,10 @@ root = None
 for val in arr:
     root = insert_bst(root, val)
 
-result=delete_bst(root,1)
+result=delete_bst(root,3)
+
 
 inorder(result)
-
 
 
 
